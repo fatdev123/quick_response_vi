@@ -11,7 +11,7 @@ Khi gặp phải một câu hỏi hóc búa, sự cố hiếm gặp hoặc tình
 
 ```mermaid
 flowchart TD
-    InboundTrig["Khách Hàng Nêu Câu Hỏi Hóc Búa / Sự Cố Lạ"] --> Step1["Bước 1: Triển Khai Chốt Chặn Mua Thời Gian (< 10 Giây)<br/>Gõ ngay :atw-hold-check hoặc ;h_check<br/>- Bảo vệ chỉ số thời gian phản hồi (ART)<br/>- Mua ngay 60-90 giây bình tĩnh tra cứu dữ liệu"]
+    InboundTrig["Khách Hàng Nêu Câu Hỏi Hóc Búa / Sự Cố Lạ"] --> Step1["Bước 1: Triển Khai Chốt Chặn Mua Thời Gian (< 10 Giây)<br/>Gõ ngay :atw-hold-check hoặc  h_check<br/>- Bảo vệ chỉ số thời gian phản hồi (ART)<br/>- Mua ngay 60-90 giây bình tĩnh tra cứu dữ liệu"]
     
     Step1 --> Step2["Bước 2: Tra Cứu Từ Khóa Tham Số (10-30 Giây)<br/>Bấm Ctrl+F trên tệp này hoặc MASTER_POLICY_MATRIX.md<br/>Xác định chính xác SOP, người phụ trách và giới hạn cam kết"]
     

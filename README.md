@@ -98,7 +98,7 @@ flowchart TD
     Verify -- "Sai Lệch Lần 1 Hoặc Lần 2" --> Retry["Thông Báo Dữ Liệu Chưa Khớp<br/>TUYỆT ĐỐI KHÔNG mớm thông tin đúng<br/>TUYỆT ĐỐI KHÔNG xác nhận phán đoán"]
     Retry --> Step1
     
-    Verify -- "Sai Quá Số Lần (Lần 3+)" --> AuthFail["Khóa Xác Thực: Kích Hoạt :atw-cpni-fail / ;v_fail<br/>Dừng Cung Cấp Thông Tin Cụ Thể"]
+    Verify -- "Sai Quá Số Lần (Lần 3+)" --> AuthFail["Khóa Xác Thực: Kích Hoạt :atw-cpni-fail /  v_fail<br/>Dừng Cung Cấp Thông Tin Cụ Thể"]
     AuthFail --> LimitService["Chỉ Hỗ Trợ Giải Thích Chính Sách Chung<br/>HOẶC Hướng Dẫn Tải Giấy Tờ Tùy Thân Lên Cổng Xác Minh"]
 ```
 
@@ -130,7 +130,7 @@ sequenceDiagram
         alt Nhà Mạng Tiếp Nhận Là AT&T
             Note over CRM: Tài khoản tự động hủy sau 48 giờ kể từ khi tạo phiếu
         else Nhà Mạng Tiếp Nhận Là MVNO-C
-            Note over CRM: Khách có 15 ngày để chuyển; Bộ phận Retention hủy vào cuối tháng
+            Note over CRM: Khách có 15 ngày để chuyển - Bộ phận Retention hủy vào cuối tháng
         end
         Carrier->>CRM: Gửi Lệnh Yêu Cầu Chuyển Số Liên Mạng
         CRM-->>Carrier: Phê Duyệt & Giải Phóng Số Thuê Bao

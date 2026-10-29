@@ -143,7 +143,7 @@ sequenceDiagram
         alt Nhà Mạng Tiếp Nhận Là AT&T
             Note over OCS: Đường truyền tự động chấm dứt sau 48 giờ kể từ khi tạo phiếu
         else Nhà Mạng Tiếp Nhận Là MVNO-C
-            Note over OCS: Khách có 15 ngày để chuyển; Bộ phận Retention xử lý hủy cuối tháng
+            Note over OCS: Khách có 15 ngày để chuyển - Bộ phận Retention xử lý hủy cuối tháng
         end
         
         Carrier->>OCS: Gửi Lệnh Yêu Cầu Chuyển Số Điện Tử

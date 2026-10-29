@@ -38,7 +38,7 @@ flowchart TD
     CheckCRM -- "Sai Lệch (Lần 1 hoặc 2)" --> Reprompt["Cảnh Báo Dữ Liệu Chưa Khớp<br/>- Tuyệt đối KHÔNG mớm thông tin đúng từ CRM<br/>- Tuyệt đối KHÔNG xác nhận phỏng đoán của khách"]
     Reprompt --> CollectPII
 
-    CheckCRM -- "Sai Lệch Quá Số Lần (Lần 3+)" --> Lockout["Khóa Xác Thực: Sử Dụng :atw-cpni-fail / ;v_fail<br/>Chỉ hỗ trợ giải thích chính sách chung<br/>Hướng dẫn tải giấy tờ tùy thân lên cổng bảo mật"]
+    CheckCRM -- "Sai Lệch Quá Số Lần (Lần 3+)" --> Lockout["Khóa Xác Thực: Sử Dụng :atw-cpni-fail /  v_fail<br/>Chỉ hỗ trợ giải thích chính sách chung<br/>Hướng dẫn tải giấy tờ tùy thân lên cổng bảo mật"]
 ```
 
 ### 2.2 Quy Chuẩn Thao Tác CPNI Nghiêm Ngặt
@@ -229,7 +229,7 @@ sequenceDiagram
         alt Nhà Mạng Tiếp Nhận Là AT&T
             Note over CRM: Tài khoản tự động chấm dứt sau 48 giờ kể từ khi tạo phiếu
         else Nhà Mạng Tiếp Nhận Là MVNO-C
-            Note over CRM: Khách có 15 ngày để chuyển; Bộ phận Retention xử lý hủy cuối tháng
+            Note over CRM: Khách có 15 ngày để chuyển - Bộ phận Retention xử lý hủy cuối tháng
         end
         GC->>CRM: Gửi Yêu Cầu Chuyển Số Điện Tử Liên Mạng
         CRM-->>GC: Xác Nhận Giải Phóng Số Thuê Bao Thành Công
